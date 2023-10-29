@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class Main {
+    //In this kata you should simply determine, whether a given year is a leap year or not. In case you don't know the rules, here they are:
+    //
+    //    Years divisible by 4 are leap years,
+    //    but years divisible by 100 are not leap years,
+    //    but years divisible by 400 are leap years.
+    //
+    //Tested years are in range 1600 ≤ year ≤ 4000.
+
+    public static void main(String[] args){
+        String bissexto = "bissexto";
+        Scanner in = new Scanner(System.in);
+        int ano = in.nextInt();
+        System.out.println(ano);
+        if(ano % 4 == 0 && ano % 100 != 0 || ano % 400 == 0) {
+            System.out.println(bissexto);
+        }
+        else{
+            System.out.println("Não é bissexto");
+        }
+
+    }
+
+        }
+
